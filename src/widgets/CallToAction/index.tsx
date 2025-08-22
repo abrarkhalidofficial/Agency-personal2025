@@ -30,16 +30,18 @@ const Index: FC<Props> = () => {
 
       <footer className="flex justify-between border-t border-t-gray-800 px-[5vw] py-[1.8vw] text-[1.6vw] md:px-[2vw] md:py-[2.4vw] md:text-[2vw] ">
         <div>
-          © 2023.{' '}
+          © 2025.{' '}
           <a href="https://github.com/abrarkhalidofficial/Agency-personal2025" target="_blank" rel="norelopener">
             Source Code
           </a>
         </div>
-        <ul className="flex space-x-[3vw] ">
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
-        </ul>
+        <div className="mt-4 flex space-x-4 md:mt-0">
+          {['/linkedin.svg', '/twitter.svg', '/instagram.svg', '/youtube.svg'].map((icon, idx) => (
+            <a key={idx} href="#" className="transition hover:text-green-700">
+              <img src={icon} alt="social" className="h-10 w-10" />
+            </a>
+          ))}
+        </div>
       </footer>
     </SectionOpacity>
   );
