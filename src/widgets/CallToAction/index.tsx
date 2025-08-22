@@ -38,7 +38,7 @@ const Index: FC<Props> = () => {
         <div className="mt-4 flex space-x-4 md:mt-0">
           {['/linkedin.svg', '/twitter.svg', '/instagram.svg', '/youtube.svg'].map((icon, idx) => (
             <a key={idx} href="#" className="transition hover:text-green-700">
-              <img src={icon} alt="social" className="h-10 w-10" />
+              <img src={icon} alt="social" className="h-10 w-10" style={{ filter: 'invert(1)' }} />
             </a>
           ))}
         </div>
